@@ -17,5 +17,5 @@ test.each([
 ])('for nickname %s should return %s"', (name, result) => {
   const validator = new Validator(name);
 
-  expect(validator.validateUserName()).toEqual(result);
+  expect(validator.validateUserName()).toBe(result);
 });
